@@ -1,14 +1,223 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <div class="continer" style="position: relative;">
-        <div class="aniother-continer" style="position: absolute; width: 100px;
-        height: 100px; background-color: red; content: '';"></div>
-    </div>
-</body>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="вёрстка, HTML, CSS, JS, React" />
+    <meta name="description" content="Мое порфолию по разработке сайтов" />
+    <title>Портфолио: Главная страница</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navigation">
+        <ul class="navigation_list">
+          <li class="navigation__item"></li>
+          <li class="navigation__item"></li>
+          <li class="navigation__item"></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main">
+      <section class="about__site">
+        <h1 class="about__site-title">
+          Твой дизайн в идеальном&lbrace;коде&rbrace;
+        </h1>
+        <p class="about__site-text">
+          Профессиональная верстка сайтов с пиксельной точностью и без костылей.
+        </p>
+        <div class="about__site-continer">
+          <ul class="about__site-list">
+            <li class="about__site-item">HTML</li>
+            <li class="about__site-item">CSS</li>
+            <li class="about__site-item">JavaScript</li>
+            <li class="about__site-item">React</li>
+            <li class="about__site-item">AI</li>
+          </ul>
+        </div>
+      </section>
+      <section class="about">
+        <h2 class="title about__title">01 &#47;&#47; Обо мне &#47;&#47; Александр Дудка<br>философия кода</h2>
+        <p class="about__text">Frontend-разработчик (React / TypeScript / Git). Создаю адаптивные, быстрые и кроссбраузерные веб-приложения. Пишу чистый, документированный код и строго следую современным стандартам разработки.</p>
+        <div class="about__container">
+            <p class="about__container-text">Уделяю ключевое внимание Pixel Perfect верстке и плавной анимации. Стремлюсь к тому, чтобы каждый интерфейс был не просто рабочим, но и интуитивно понятным для конечного пользователя.</p>
+            <p class="about__container-text about__container-text--another">Постоянно развиваю навыки и внедряю лучшие практики разработки. Ищу команду, ориентированную на качество кода и продукта.</p>
+        </div>
+        <ul class="about__list-another">
+            <li class="about__item-another"></li>
+            <li class="about__item-another"></li>
+            <li class="about__item-another"></li>
+        </ul>
+      </section>
+      <section class="skills">
+        <h2 class="title skills__title">02 &#47;&#47; Навыки<br>Hard Skills</h2>
+        <div class="slider">
+            <ul class="slider__list">
+                <li class="slider__item">
+                    <img src="#" alt="#">
+                    <div class="slider__item-continer">
+                        <h2 class="slider__item-title">&lbrace;01&rbrace;</h2>
+                        <h3 class="slider__item-title-another">Базовый стек</h3>
+                        <p class="slider__item-text">(HTML5 / CSS3 / Семантика) — умение создавать доступную, кроссбраузерную и адаптивную верстку по методологии БЭМ или с использованием Tailwind CSS.</p>
+                    </div>
+                </li>
+                <li class="slider__item">
+                    <img src="#" alt="#">
+                    <div class="slider__item-continer">
+                        <h2 class="slider__item-title">&lbrace;02&rbrace;</h2>
+                        <h3 class="slider__item-title-another">JavaScript &#47; TypeScript</h3>
+                        <p class="slider__item-text">Уверенное знание синтаксиса, асинхронного кода, работы с API и типизации для создания стабильных приложений.</p>
+                    </div>
+                </li>
+                <li class="slider__item">
+                    <img src="#" alt="#">
+                    <div class="slider__item-continer">
+                        <h2 class="slider__item-title">&lbrace;03&rbrace;</h2>
+                        <h3 class="slider__item-title-another">Современные фреймворки</h3>
+                        <p class="slider__item-text">(React &#47; Vue &#47; Angular) — глубокое понимание хотя бы одной библиотеки для разработки сложных SPA-приложений и управления их состоянием.</p>
+                    </div>
+                </li>
+                <li class="slider__item">
+                    <img src="#" alt="#">
+                    <div class="slider__item-continer">
+                        <h2 class="slider__item-title">&lbrace;04&rbrace;</h2>
+                        <h3 class="slider__item-title-another">Система контроля версий</h3>
+                        <p class="slider__item-text">(Git) — владение Git и сервисами GitHub&#47;GitLab на уровне работы в команде (ветвление, слияние, разрешение конфликтов).</p>
+                    </div>
+                </li>
+                <li class="slider__item">
+                    <img src="#" alt="#">
+                    <div class="slider__item-continer">
+                        <h2 class="slider__item-title">&lbrace;05&rbrace;</h2>
+                        <h3 class="slider__item-title-another">Инструменты сборки и оптимизации</h3>
+                        <p class="slider__item-text">(Vite &#47; Webpack &#47; Сhrome DevTools) — умение собирать проект, настраивать рабочее окружение и профилировать скорость загрузки страниц.</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+      </section>
+      <section class="stages">
+        <h2 class="title stages__title">03  &#47; &#47; Этапы работ</h2>
+        <div class="stages__slider">
+            <ol class="stages__list">
+                <li class="stages__item">
+                    <h3 class="stages__another-title">Первичный контакт и оценка задачи</h3>
+                    <ul class="stages__list-another">
+                        <li class="stages__item-another">
+                            <h4 class="stages__inner-title">&#47; &#47;Брифинг</h4>
+                            <p class="stages_text">Созваниваюсь или списываюсь с вами, чтобы детально обсудить проект и погрузиться в задачу.</p>
+                        </li>
+                        <li class="stages__item-another">
+                            <h4 class="stages__inner-title">&#47; &#47;Технический анализ макета</h4>
+                            <p class="stages_text">Внимательно проверяю дизайн в Figma перед началом разработки. Контролирую наличие мобильной версии, адаптивных сеток и всех интерактивных состояний: от ховеров и фокусов кнопок до раскрывающихся меню.</p>
+                        </li>
+                        <li class="stages__item-another">
+                            <h4 class="stages__inner-title">&#47; &#47;Фиксация ТЗ и условий</h4>
+                            <p class="stages_text">Составляю детальное техническое задание или дополняю ваше. Четко прописываю стек технологий, поддерживаемые браузеры и сложность анимаций. Это гарантирует прозрачность: мы оба точно знаем, какой результат будет на выходе.</p>
+                        </li>
+                        
+                    </ul>
+                    <div class="stages__continer"></div>
+                </li>
+
+                <li class="stages__item">
+                    <h3 class="stages__another-title">Разработка</h3>
+                    <ul class="stages__list-another">
+                        <li class="stages__item-another">
+                            <h4 class="stages__inner-title">&#47; &#47;Настраиваю окружение</h4>
+                            <p class="stages_text">Инициализирую репозиторий на GitHub, конфигурирую сборщик (Vite&#47;Next.js), подключаю линтеры (ESLint, Prettier) и CSS-фреймворк для чистоты кода.</p>
+                        </li>
+                        <li class="stages__item-another">
+                            <h4 class="stages__inner-title">&#47; &#47;Создаю компоненты</h4>
+                            <p class="stages_text">разрабатываю базу переиспользуемых элементов (кнопки, инпуты, модальные окна) для ускорения сборки и UI-единообразия.</p>
+                        </li>
+                        <li class="stages__item-another">
+                            <h4 class="stages__inner-title">&#47; &#47;Реализую логику</h4>
+                            <p class="stages_text">верстаю страницы, настраиваю роутинг, подключаю стейт-менеджер и интегрирую сайт с бэкендом или сторонними API.</p>
+                        </li>
+                        <li class="stages__item-another">
+                            <h4 class="stages__inner-title">&#47; &#47;Демонстрирую промежуточные результаты</h4>
+                            <p class="stages_text">Регулярно показываю вам готовые блоки (например, сначала главную страницу), чтобы вы видели прогресс и были спокойны.</p>
+                        </li>
+                        
+                    </ul>
+                    <div class="stages__continer"></div>
+                </li>
+
+                <li class="stages__item">
+                    <h3 class="stages__another-title">Тестирование и оптимизация</h3>
+                    <ul class="stages__list-another">
+                        <li class="stages__item-another">
+                            <h4 class="stages__inner-title">&#47; &#47;Проверяю адаптивность</h4>
+                            <p class="stages_text">тестирую отображение сайта во всех популярных браузерах (Chrome, Safari, Firefox) и на экранах реальных смартфонов.</p>
+                        </li>
+                        <li class="stages__item-another">
+                            <h4 class="stages__inner-title">&#47; &#47;Валидирую интерфейс</h4>
+                            <p class="stages_text">проверяю отправку форм, работу ссылок, обработку ошибок сети (если API недоступно).</p>
+                        </li>
+                        <li class="stages__item-another">
+                            <h4 class="stages__inner-title">&#47; &#47;Оптимизирую производительность</h4>
+                            <p class="stages_text">сжимаю изображения, настраиваю Lazy Loading и вывожу показатели Google Lighthouse в «зеленую зону».</p>
+                        </li> 
+                    </ul>
+                    <div class="stages__continer"></div>
+                </li>
+
+                <li class="stages__item">
+                    <h3 class="stages__another-title">Демонстрация и приемка</h3>
+                    <ul class="stages__list-another">
+                        <li class="stages__item-another">
+                            <h4 class="stages__inner-title">&#47; &#47;Деплою на тестовый сервер</h4>
+                            <p class="stages_text">загружаю сайт на временный хостинг (Vercel/Netlify), чтобы вы могли покликать его со своего устройства. Никаких показов «с экрана моего компьютера».</p>
+                        </li>
+                        <li class="stages__item-another">
+                            <h4 class="stages__inner-title">&#47; &#47;Вношу финальные правки</h4>
+                            <p class="stages_text">собираю вашу обратную связь и оперативно корректирую нюансы в рамках изначального ТЗ.</p>
+                        </li>
+                    </ul>
+                    <div class="stages__continer"></div>
+                </li>
+
+                <li class="stages__item">
+                    <h3 class="stages__another-title">Передача проекта и поддержка</h3>
+                    <ul class="stages__list-another">
+                        <li class="stages__item-another">
+                            <h4 class="stages__inner-title">&#47; &#47;Переношу на ваш хостинг</h4>
+                            <p class="stages_text">привязываю ваш домен и полностью настраиваю продакшн-сервер для запуска сайта.</p>
+                        </li>
+                        <li class="stages__item-another">
+                            <h4 class="stages__inner-title">&#47; &#47;Передаю доступы</h4>
+                            <p class="stages_text">отдаю вам полные права на репозиторий GitHub, ключи API и административные панели.</p>
+                        </li>
+                        <li class="stages__item-another">
+                            <h4 class="stages__inner-title">&#47; &#47;Готовлю документацию</h4>
+                            <p class="stages_text">пишу краткую и понятную инструкцию (Readme.md) по запуску проекта и обновлению контента.</p>
+                        </li> 
+                    </ul>
+                    <div class="stages__continer"></div>
+                </li>
+
+            </ol>       
+        </div>  
+      </section>
+      <section class="education">
+        <h2 class="title education__title">04 &#47;&#47; Образование<br>с 2023 по настоящие время...</h2>
+        <h3 class="education__title-another">Мой путь во фронтенд начался в HTML Academy, где я защитил все проекты на 100 баллов и получил официальные сертификаты.</h3>
+        <p class="education__text">Логическим продолжением учебы стала стажировка в компании «Лига А», где я получил ценный опыт коммерческой разработки и создания реальных веб-интерфейсов в команде.</p>
+        <p class="education__text">Я не останавливаюсь на достигнутом и постоянно углубляю свои знания: регулярно изучаю профильную литературу, включая такие фундаментальные труды, как «Выразительный JavaScript», и осваиваю новые инструменты для создания чистого, эффективного кода.</p>
+        <div class="education__continer">
+            <h3 class="education__continer-title">HTML<br>ACADEMY</h3>
+            <ul class="eductaion__list">
+                <li class="eduction__item">&#47;&#47;Семантическая и адаптивная вёрстка (HTML5 и CSS3)</li>
+                <li class="eduction__item">&#47;&#47;Продвинутая работа с CSS (Flexbox, Grid, Sass/LESS)</li>
+                <li class="eduction__item">&#47;&#47;Сборка и автоматизация</li>
+                <li class="eduction__item">&#47;&#47;Базовый и продвинутый JavaScript</li>
+                <li class="eduction__item">&#47;&#47;Работа с библиотеками/фреймворками</li>
+                <li class="eduction__item">&#47;&#47;Тестирование и бэкенд</li>
+            </ul>
+            <button class="button" type="button">Посмотреть сертификаты</button>
+            <button class="eduction__button" type="button"></button>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>
