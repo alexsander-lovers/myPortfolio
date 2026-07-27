@@ -10,54 +10,68 @@
   </head>
   <body>
     <header class="header">
-      <nav class="navigation">
-        <a class="navigation__link">
-          <img class="logo logo__header" src="images/logo.svg" width="66" height="25" alt="Лого сайта">
-        </a>
-        <select name="language-site" id="language-site">
-          <option value="RU">RU</option>
-          <option value="EN">EN</option>
-        </select>
-        <button class="burger-menu-btn" aria-label="Открыть меню">
-          <span class="burger-menu-line"></span>
-          <span class="burger-menu-line"></span>
-        </button>
-      </nav>
+      <div class="header__container">
+        <nav class="navigation">
+          <a class="navigation__link">
+            <img class="logo logo__header" src="images/logo.svg" width="66" height="25" alt="Лого сайта">
+          </a>
+          <div class="navigation-dropdown__wrapper">
+            <div class="navigation-dropdown"></div>
+          </div>
+          <div class="burger">
+            <div class="burger__wrapper">
+              <div class="burger-menu" aria-label="Открыть меню">
+                <span class="burger-menu__line"></span>
+                <span class="burge-menu__line"></span>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
     </header>
     <main class="main-index">
       <section class="hero">
-        <h1 class="hero__title">
-          Твой дизайн в идеальном {коде}
-        </h1>
-        <p class="hero__text">
-          Профессиональная верстка сайтов с пиксельной точностью и без костылей.
-        </p>
-          <ul class="hero__list">
-            <li class="hero__item">HTML</li>
-            <li class="hero__item">CSS</li>
-            <li class="hero__item">JavaScript</li>
-            <li class="hero__item">React</li>
-            <li class="hero__item">AI</li>
+        <h1 class="visually-hidden">Портфолио начало сайта</h1>
+        <div class="hero__container">
+          <p class="hero__title">
+            Твой дизайн в идеальном {коде}
+          </p>
+          <p class="hero__text">
+            Профессиональная верстка сайтов с пиксельной точностью и без костылей.
+          </p>
+        </div>
+      </section>
+      <section class="features">
+        <div class="features__container">
+          <ul class="features__list">
+            <li class="features__item">HTML</li>
+            <li class="features__item">CSS</li>
+            <li class="features__item">JavaScript</li>
+            <li class="features__item">React</li>
+            <li class="features__item">AI</li>
           </ul>
+        </div>
       </section>
       <section class="about">
-        <h2 class="title about__title" id="about__title">01 // Обо мне // Александр Дудка философия кода</h2>
-        <p class="about__text">Frontend-разработчик (React / TypeScript / Git). Создаю адаптивные, быстрые и кроссбраузерные веб-приложения. Пишу чистый, документированный код и строго следую современным стандартам разработки.</p>
         <div class="about__container">
-            <p class="text about__text about__text--another">Уделяю ключевое внимание Pixel Perfect верстке и плавной анимации. Стремлюсь к тому, чтобы каждый интерфейс был не просто рабочим, но и интуитивно понятным для конечного пользователя.</p>
-            <p class="text about__text about__text--subtext">Постоянно развиваю навыки и внедряю лучшие практики разработки. Ищу команду, ориентированную на качество кода и продукта.</p>
+          <h2 class="title about__title" id="about__title">01 // Обо мне // Александр Дудка философия кода</h2>
+          <p class="about__text">Frontend-разработчик (React / TypeScript / Git). Создаю адаптивные, быстрые и кроссбраузерные веб-приложения. Пишу чистый, документированный код и строго следую современным стандартам разработки.</p>
+          <div class="about__container-text">
+              <p class="text  about__text--another">Уделяю ключевое внимание Pixel Perfect верстке и плавной анимации. Стремлюсь к тому, чтобы каждый интерфейс был не просто рабочим, но и интуитивно понятным для конечного пользователя.</p>
+              <p class="text about__text--subtext">Постоянно развиваю навыки и внедряю лучшие практики разработки. Ищу команду, ориентированную на качество кода и продукта.</p>
+          </div>
+          <ul class="about__list">
+              <li class="about__item">
+              <img src="images/about-icon-1.svg" width="46" height="39" alt="Декоративный элемент">
+              </li>
+              <li class="about__item">
+                <img src="images/about-icon-2.svg" width="46" height="39" alt="Декоративный элемент">
+              </li>
+              <li class="about__item">
+                <img src="images/about-icon-3.svg" width="46" height="39" alt="Декоративный элемент">
+              </li>
+          </ul>
         </div>
-        <ul class="about__list">
-            <li class="about__item">
-              <span class="visually-hidden">Интерактивный элемент</span>
-            </li>
-            <li class="about__item">
-              <span class="visually-hidden">Интерактивный элемент</span>
-            </li>
-            <li class="about__item">
-              <span class="visually-hidden">Интерактивный элемент</span>
-            </li>
-        </ul>
       </section>
       <section class="skills">
         <h2 class="title skills__title" id="skills__title">02 // Навыки Hard Skills</h2>
@@ -209,7 +223,7 @@
         <p class="text benefits__text">Логическим продолжением учебы стала стажировка в компании «Лига А», где я получил ценный опыт коммерческой разработки и создания реальных веб-интерфейсов в команде.</p>
         <p class="text benefits__text">Я не останавливаюсь на достигнутом и постоянно углубляю свои знания: регулярно изучаю профильную литературу, включая такие фундаментальные труды, как «Выразительный JavaScript», и осваиваю новые инструменты для создания чистого, эффективного кода.</p>
         <div class="benefits__continer">
-            <h3 class="title benefits__title">HTML ACADEMY</h3>
+            <h3 class="title benefits__title--another">HTML ACADEMY</h3>
             <ul class="benefits__list">
                 <li class="benefits__item">//Семантическая и адаптивная вёрстка (HTML5 и CSS3)</li>
                 <li class="benefits__item">//Продвинутая работа с CSS (Flexbox, Grid, Sass/LESS)</li>
@@ -218,9 +232,9 @@
                 <li class="benefits__item">//Работа с библиотеками/фреймворками</li>
                 <li class="benefits__item">//Тестирование и бэкенд</li>
             </ul>
-            <div class="benefits__wrapper">
-              <button class="button" type="button">Посмотреть сертификаты<span class="button__icon"></span></button>
-            </div>
+            <a class="button benefits__link">
+              Посмотреть сертификаты
+            </a>
         </div>
       </section>
     </main>
@@ -266,8 +280,8 @@
           <li class="copyright__item">Privacy policy</li>
           <li class="copyright__item">User agreement</li>
           <li class="copyright__item">Design by <a class="copyright__link" href="https://t.me/krisrog" target="_blank">Kristina Bondarenko</a></li>
+          <li class="copyright__item">© 2026 Dudka</li>
         </ul>
-        <p class="copyright">© 2026 Dudka</p>
       </section>
     </footer>
   </body>
