@@ -10,7 +10,7 @@
   </head>
   <body>
     <header class="header">
-      <div class="header__container">
+      <div class="page__container header__container">
         <nav class="navigation">
           <a class="navigation__link">
             <img class="logo logo__header" src="images/logo.svg" width="66" height="25" alt="Лого сайта">
@@ -20,7 +20,8 @@
           </div>
           <div class="burger">
             <div class="burger__wrapper">
-              <div class="burger-menu" aria-label="Открыть меню">
+              <div class="burger-menu">
+                <span class="visually-hidden">Открыть меню</span>
                 <span class="burger-menu__line"></span>
                 <span class="burge-menu__line"></span>
               </div>
@@ -29,9 +30,9 @@
         </nav>
       </div>
     </header>
-    <main class="main-index">
+    <main class="main__container main__page">
       <section class="hero">
-        <div class="hero__container">
+        <div class="page__container hero__container">
           <h1 class="hero__title">
             Твой дизайн в идеальном {коде}
           </h1>
@@ -41,6 +42,8 @@
         </div>
       </section>
       <section class="features">
+        <h2 class="visually-hidden">Навыки разработчика</h2>
+        <img class="features__img" src="images/background-photo.png" width="954" height="533" alt="#">
         <div class="features__container">
           <ul class="features__list">
             <li class="features__item">HTML</li>
@@ -52,7 +55,7 @@
         </div>
       </section>
       <section class="about">
-        <div class="about__container">
+        <div class="page__container about__container">
           <h2 class="title about__title" id="about__title"><span class="about__title--text">01 // Обо мне // Александр Дудка</span><span class="about__title--text">Философия кода</span></h2>
           <p class="about__text">Frontend-разработчик (React / TypeScript / Git). Создаю адаптивные, быстрые и кроссбраузерные веб-приложения. Пишу чистый, документированный код и строго следую современным стандартам разработки.</p>
           <div class="about__container-text">
@@ -73,14 +76,14 @@
         </div>
       </section>
       <section class="skills">
-        <div class="skills__container">
+        <div class="page__container skills__container">
           <h2 class="title skills__subtitle" id="skills__title">
             <span class="skills__subtitle-text">02 // Навыки</span>
             <span class="skills__subtitle-text">Hard Skills</span>
           </h2>
           <div class="slider">
               <ul class="slider__list">
-                  <li class="slider__item current__item">
+                  <li class="slider__item current-slider__item">
                       <img src="images/slider-icon-1.png" width="312" height="226" alt="Базовый стек">
                       <div class="slider__item-continer">
                           <h3 class="slider__item-title">01</h3>
@@ -88,7 +91,7 @@
                           <p class="text slider__item-text">(HTML5 / CSS3 / Семантика) — умение создавать доступную, кроссбраузерную и адаптивную верстку по методологии БЭМ или с использованием Tailwind CSS.</p>
                       </div>
                   </li>
-                  <li class="slider__item">
+                  <li class="slider__item not-active">
                     <img src="images/slider-icon-2.png" width="312" height="226" alt="JavaScript">
                       <div class="slider__item-continer">
                           <h3 class="slider__item-title">02</h3>
@@ -96,7 +99,7 @@
                           <p class="text slider__item-text">Уверенное знание синтаксиса, асинхронного кода, работы с API и типизации для создания стабильных приложений.</p>
                       </div>
                   </li>
-                  <li class="slider__item">
+                  <li class="slider__item not-active">
                     <img src="images/slider-icon-3.png" width="312" height="226" alt="Современные фреймворки">
                       <div class="slider__item-continer">
                           <h3 class="slider__item-title">03</h3>
@@ -104,7 +107,7 @@
                           <p class="text slider__item-text">(React / Vue / Angular) — глубокое понимание хотя бы одной библиотеки для разработки сложных SPA-приложений и управления их состоянием.</p>
                       </div>
                   </li>
-                  <li class="slider__item">
+                  <li class="slider__item not-active">
                     <img src="images/slider-icon-4.png" width="312" height="226" alt="Система контроля версий">
                       <div class="slider__item-continer">
                           <h3 class="slider__item-title">04</h3>
@@ -112,7 +115,7 @@
                           <p class="text slider__item-text">(Git) — владение Git и сервисами GitHub / GitLab на уровне работы в команде (ветвление, слияние, разрешение конфликтов).</p>
                       </div>
                   </li>
-                  <li class="slider__item">
+                  <li class="slider__item not-active">
                     <img src="images/slider-icon-5.png" width="312" height="226" alt="Инструменты сборки и оптимизациий">
                       <div class="slider__item-continer">
                           <h3 class="slider__item-title">05</h3>
@@ -125,13 +128,13 @@
         </div>
       </section>
       <section class="services">
-        <div class="services__container">
+        <div class="page__container services__container">
           <h2 class="title services__title" id="services__title">
             <span class="services__title-text">03 // Этапы работ</span>
           </h2>
           <div class="services__slider">
               <ol class="services__list">
-                  <li class="services__item">
+                  <li class="services__item current-services__item">
                       <h3 class="services__another-title">Первичный контакт и оценка задачи</h3>
                       <ul class="services__list-another">
                           <li class="services__item-another">
@@ -149,7 +152,7 @@
                       </ul>
                       <div class="services__continer"></div>
                   </li>
-                  <li class="services__item">
+                  <li class="services__item not-active">
                       <h3 class="services__another-title">Разработка</h3>
                       <ul class="services__list-another">
                           <li class="services__item-another">
@@ -171,7 +174,7 @@
                       </ul>
                       <div class="services__continer"></div>
                   </li>
-                  <li class="services__item">
+                  <li class="services__item not-active">
                       <h3 class="services__another-title">Тестирование и оптимизация</h3>
                       <ul class="services__list-another">
                           <li class="services__item-another">
@@ -189,7 +192,7 @@
                       </ul>
                       <div class="services__continer"></div>
                   </li>
-                  <li class="services__item">
+                  <li class="services__item not-active">
                       <h3 class="services__another-title">Демонстрация и приемка</h3>
                       <ul class="services__list-another">
                           <li class="services__item-another">
@@ -203,7 +206,7 @@
                       </ul>
                       <div class="services__continer"></div>
                   </li>
-                  <li class="services__item">
+                  <li class="services__item not-active">
                       <h3 class="services__another-title">Передача проекта и поддержка</h3>
                       <ul class="services__list-another">
                           <li class="services__item-another">
@@ -226,7 +229,7 @@
         </div>
       </section>
       <section class="benefits">
-        <div class="benefits__container">
+        <div class="page__container benefits__container">
           <h2 class="title benefits__title" id="benefits__title">
             <span class="benefits__title-text">04 // Образование</span>
             <span class="benefits__title-text">с 2023 по настоящие время...</span>
@@ -234,20 +237,22 @@
           <p class="benefits__text benefits__text--another">Мой путь во фронтенд начался в HTML Academy, где я защитил все проекты на 100 баллов и получил официальные сертификаты.</p>
           <p class="text benefits__text">Логическим продолжением учебы стала стажировка в компании «Лига А», где я получил ценный опыт коммерческой разработки и создания реальных веб-интерфейсов в команде.</p>
           <p class="text benefits__text">Я не останавливаюсь на достигнутом и постоянно углубляю свои знания: регулярно изучаю профильную литературу, включая такие фундаментальные труды, как «Выразительный JavaScript», и осваиваю новые инструменты для создания чистого, эффективного кода.</p>
-          <div class="benefits__wripper">
-              <h3 class="benefits__title--another">HTML<br>ACADEMY</h3>
-              <ul class="benefits__list">
-                  <li class="benefits__item">//Семантическая и адаптивная вёрстка (HTML5 и CSS3)</li>
-                  <li class="benefits__item">//Продвинутая работа с CSS (Flexbox, Grid, Sass/LESS)</li>
-                  <li class="benefits__item">//Сборка и автоматизация</li>
-                  <li class="benefits__item">//Базовый и продвинутый JavaScript</li>
-                  <li class="benefits__item">//Работа с библиотеками/фреймворками</li>
-                  <li class="benefits__item">//Тестирование и бэкенд</li>
+        </div>
+      </section>
+      <section class="education">
+        <div class="page__container education__container">
+          <h3 class="education__title--another">HTML<br>ACADEMY</h3>
+              <ul class="education__list">
+                  <li class="education__item">//Семантическая и адаптивная вёрстка (HTML5 и CSS3)</li>
+                  <li class="education__item">//Продвинутая работа с CSS (Flexbox, Grid, Sass/LESS)</li>
+                  <li class="education__item">//Сборка и автоматизация</li>
+                  <li class="education__item">//Базовый и продвинутый JavaScript</li>
+                  <li class="education__item">//Работа с библиотеками/фреймворками</li>
+                  <li class="education__item">//Тестирование и бэкенд</li>
               </ul>
-              <a class="button benefits__link">
+              <a class="button education__link">
                 Посмотреть сертификаты
               </a>
-          </div>
         </div>
       </section>
     </main>
