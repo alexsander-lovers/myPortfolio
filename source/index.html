@@ -15,8 +15,18 @@
           <a class="navigation__link">
             <img class="logo logo__header" src="images/logo.svg" width="66" height="25" alt="Лого сайта">
           </a>
-          <div class="navigation-dropdown__wrapper">
-            <div class="navigation-dropdown"></div>
+          <div class="navigation__lang">
+            <button class="navigation__button" type="button">RU</button>
+            <div class="navigation__lang-select navigation__lang-select--close">
+              <ul class="navigation__lang-list">
+                <li class="navigation__lang-list__item">
+                  <a href="#" class="navigation__lang-link navigation__lang-link--current">RU</a>
+                </li>
+                <li class="navigation__lang-list__item">
+                  <a href="#" class="navigation__lang-link">EN</a>
+                </li>
+              </ul>
+            </div>
           </div>
           <div class="burger">
             <div class="burger__wrapper">
@@ -86,7 +96,11 @@
                   <li class="slider__item current-slider__item">
                       <img src="images/slider-icon-1.png" width="312" height="226" alt="Базовый стек">
                       <div class="slider__item-continer">
+                        <div class="slider__item-title-container">
+                          <img src="images/skills-icon-left.svg" width="10" height="30" alt="Обрамление для заголовка">
                           <h3 class="slider__item-title">01</h3>
+                          <img src="images/skills-icon-right.svg" width="10" height="30" alt="Обрамление для заголовка">
+                        </div>
                           <h4 class="slider__item-title-another">Базовый стек</h4>
                           <p class="text slider__item-text">(HTML5 / CSS3 / Семантика) — умение создавать доступную, кроссбраузерную и адаптивную верстку по методологии БЭМ или с использованием Tailwind CSS.</p>
                       </div>
@@ -94,7 +108,11 @@
                   <li class="slider__item not-active">
                     <img src="images/slider-icon-2.png" width="312" height="226" alt="JavaScript">
                       <div class="slider__item-continer">
+                        <div class="slider__item-title-container">
+                          <img src="images/skills-icon-left.svg" width="10" height="30" alt="Обрамление для заголовка">
                           <h3 class="slider__item-title">02</h3>
+                          <img src="images/skills-icon-right.svg" width="10" height="30" alt="Обрамление для заголовка">
+                        </div>
                           <h4 class="slider__item-title-another">JavaScript TypeScript</h4>
                           <p class="text slider__item-text">Уверенное знание синтаксиса, асинхронного кода, работы с API и типизации для создания стабильных приложений.</p>
                       </div>
@@ -102,7 +120,11 @@
                   <li class="slider__item not-active">
                     <img src="images/slider-icon-3.png" width="312" height="226" alt="Современные фреймворки">
                       <div class="slider__item-continer">
+                        <div class="slider__item-title-container">
+                          <img src="images/skills-icon-left.svg" width="10" height="30" alt="Обрамление для заголовка">
                           <h3 class="slider__item-title">03</h3>
+                          <img src="images/skills-icon-right.svg" width="10" height="30" alt="Обрамление для заголовка">
+                        </div>
                           <h4 class="slider__item-title-another">Современные фреймворки</h4>
                           <p class="text slider__item-text">(React / Vue / Angular) — глубокое понимание хотя бы одной библиотеки для разработки сложных SPA-приложений и управления их состоянием.</p>
                       </div>
@@ -110,7 +132,11 @@
                   <li class="slider__item not-active">
                     <img src="images/slider-icon-4.png" width="312" height="226" alt="Система контроля версий">
                       <div class="slider__item-continer">
+                        <div class="slider__item-title-container">
+                          <img src="images/skills-icon-left.svg" width="10" height="30" alt="Обрамление для заголовка">
                           <h3 class="slider__item-title">04</h3>
+                          <img src="images/skills-icon-right.svg" width="10" height="30" alt="Обрамление для заголовка">
+                        </div>
                           <h4 class="slider__item-title-another">Система контроля версий</h4>
                           <p class="text slider__item-text">(Git) — владение Git и сервисами GitHub / GitLab на уровне работы в команде (ветвление, слияние, разрешение конфликтов).</p>
                       </div>
@@ -118,7 +144,11 @@
                   <li class="slider__item not-active">
                     <img src="images/slider-icon-5.png" width="312" height="226" alt="Инструменты сборки и оптимизациий">
                       <div class="slider__item-continer">
+                        <div class="slider__item-title-container">
+                          <img src="images/skills-icon-left.svg" width="10" height="30" alt="Обрамление для заголовка">
                           <h3 class="slider__item-title">05</h3>
+                          <img src="images/skills-icon-right.svg" width="10" height="30" alt="Обрамление для заголовка">
+                        </div>
                           <h4 class="slider__item-title-another">Инструменты сборки и оптимизации</h4>
                           <p class="text slider__item-text">(Vite / Webpack / Сhrome DevTools) — умение собирать проект, настраивать рабочее окружение и профилировать скорость загрузки страниц.</p>
                       </div>
@@ -250,9 +280,25 @@
                   <li class="education__item">//Работа с библиотеками/фреймворками</li>
                   <li class="education__item">//Тестирование и бэкенд</li>
               </ul>
-              <a class="button education__link">
-                Посмотреть сертификаты
-              </a>
+              <button class="button education__button" type="button">
+                <svg class="button__icon education__icon" width="289" height="50" viewBox="0 0 289 50" fill="none" stroke="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M232.18 0C234.941 0.000205226 237.18 2.2387 237.18 5V12H239.173V5C239.173 2.23858 241.411 6.5903e-08 244.173 0H284C286.761 0.000239132 289 2.23872 289 5V45C289 47.7613 286.761 49.9998 284 50H244.173C241.411 50 239.173 47.7614 239.173 45V38H237.18V45C237.18 47.7613 234.941 49.9998 232.18 50H5C2.23858 50 4.02673e-08 47.7614 0 45V5C6.44277e-07 2.23858 2.23858 3.10149e-08 5 0H232.18ZM264.087 4C252.529 4 243.159 13.402 243.159 25C243.159 36.598 252.529 46 264.087 46C275.645 45.9996 285.015 36.5977 285.015 25C285.015 13.4023 275.645 4.00038 264.087 4Z" fill="white"/>
+                  <ellipse cx="264.086" cy="25" rx="21.9241" ry="22" fill="white"/>
+                  <path d="M264.086 3.5C275.917 3.5 285.511 13.1242 285.511 25C285.511 36.8758 275.917 46.5 264.086 46.5C252.255 46.4998 242.662 36.8756 242.662 25C242.662 13.1244 252.255 3.50017 264.086 3.5Z" stroke="white" stroke-opacity="0.2"/>
+                  <g clip-path="url(#clip0_131_2025)">
+                  <path d="M267.28 25.8114H257.961V24.2364H267.28L263.173 20.0124L264.256 18.8989L270.211 25.0239L264.256 31.1489L263.173 30.0354L267.28 25.8114Z" fill="white"/>
+                  </g>
+                  <defs>
+                  <clipPath id="clip0_131_2025">
+                  <rect width="13.9517" height="13.9517" fill="white" transform="matrix(0 1 -1 0 271.062 18.0239)"/>
+                  </clipPath>
+                  </defs>
+                  </svg>
+                <span class="button__text">Посмотреть сертификаты</span>
+                <svg class="button__icon-arrow education__icon-arrow" width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M9.31919 6.91248H0V5.33752H9.31919L5.21237 1.11349L6.29497 0L12.25 6.125L6.29497 12.25L5.21237 11.1365L9.31919 6.91248Z" fill="white"/>
+                  </svg>
+              </button>
         </div>
       </section>
     </main>
@@ -300,10 +346,10 @@
             <li class="copyright__item">User agreement</li>
             <li class="copyright__item">Design by <a class="copyright__link" href="https://t.me/krisrog" target="_blank">Kristina Bondarenko</a></li>
           </ul>
-          <p class="copyright__text">© 2026 Dudka</p>
+          <p class="copyright__text">
+            &copy; 2026 Dudka</p>
         </section>
       </div>
-
     </footer>
   </body>
 </html>

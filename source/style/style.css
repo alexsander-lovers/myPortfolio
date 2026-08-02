@@ -93,15 +93,97 @@ body {
   cursor: pointer;
 }
 
-.navigation-dropdown__wrapper {
-  padding: 12px 15px 9px 15px;
+.navigation__lang {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  min-width: 68px;
   margin-right: 10px;
   border: 1px solid rgba(255, 255, 255, 0.15);
   border-radius: 5px;
+  color: #fff;
+  outline: none;
 }
 
-.navigation-dropdown {
-  width: 38px;
+.navigation__button {
+  align-self: center;
+  padding: 12px 33px 10px 15px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  outline: none;
+}
+
+.navigation__lang-select--close {
+  display: none;
+}
+
+.navigation__lang-select--open {
+  display: block;
+}
+
+.navigation__lang::after {
+  position: absolute;
+  content: '';
+  background-image: url('../images/arrow-down-icon.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 7px;
+  height: 7px;
+  top: 19px;
+  right: 19px;
+  z-index: 1;
+}
+
+.navigation__lang-select {
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  min-width: 71px;
+}
+
+.navigation__lang-list {
+  position: relative;
+  background-color: #121212;
+  list-style: none;
+  border-radius: 5px;
+  z-index: 2;
+}
+
+.navigation__lang-link {
+  text-decoration: none;
+  color: #fff;
+}
+
+.navigation__lang-list__item {
+  padding: 12px 35px 10px 15px;
+}
+
+.navigation__lang-link--current {
+  position: relative;
+}
+
+.navigation__lang-link--current::after {
+  position: absolute;
+  content: '';
+  background-image: url('../images/arrow-down-icon.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 7px;
+  height: 7px;
+  rotate: 180deg;
+  top: 5px;
+  right: -19px;
+  z-index: 2;
+}
+
+.navigation__lang:hover .navigation__lang-select{
+display: block;
+}
+
+.navigation__lang-list__item:hover {
+  opacity: 0.7;
+  cursor: pointer;
 }
 
 .burger {
@@ -182,7 +264,19 @@ body {
 }
 
 .features__item {
+  position: relative;
   margin-right: 20px;
+}
+
+.features__item:not(:last-child)::after{
+  position: absolute;
+  content: '';
+  width: 5px;
+  height: 5px;
+  background-color: #fff;
+  border-radius: 50%;
+  top: 7px;
+  right: -12px;
 }
 
 .features__text {
@@ -278,7 +372,9 @@ body {
   flex-direction: column;
 }
 
-.slider__item img {
+.slider__item > img {
+  display: block;
+  margin: 0 auto;
   margin-bottom: 86px;
 }
 
@@ -291,14 +387,34 @@ body {
 }
 
 .slider__item-continer {
+  position: relative;
   padding: 15px;
   padding-right: 21px;
   border: 1px solid rgba(255, 255, 255, 0.20);
   border-top: none;
 }
 
-.slider__item-title {
+.slider__item-continer::before {
+  position: absolute;
+  content: "";
+  background-image: url("../images/slider-icon.svg");
+  width: 340px;
+  height: 70px;
+  top: -70px;
+  left: -1px;
+}
+
+.slider__item-continer {
+  position: relative;
+}
+
+.slider__item-title-container {
+  display: flex;
   margin-bottom: 70px;
+}
+
+.slider__item-title {
+  margin: 0 2px;
   font-family: "Inter Tight", "Arial", sans-serif;
   font-weight: 400;
   font-size: 30px;
@@ -408,13 +524,63 @@ body {
   margin-bottom: 8px;
 }
 
-.education__link {
-  text-decoration: none;
-  background-color: #fff;
+.button {
+  position: relative;
+  display: flex;
+  align-items: center;
+  background-color: #000;
+  border: none;
+  outline: none;
+  cursor: pointer;
   color: #000;
   font-family: "Inter Tight", "Arial", sans-serif;
   font-weight: 500;
   font-size: 14px;
+}
+
+.button__text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 16px 35px;
+  padding-right: 85px;
+}
+
+.button::after{
+  position: absolute;
+  content: "";
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: #000;
+  right: 3px;
+  top: 3px;
+  z-index: 1;
+}
+
+.education__icon-arrow{
+  position: absolute;
+  right: 18px;
+  min-width: 13px;
+  min-height: 13px;
+  z-index: 2;
+}
+
+.button:hover.button::after {
+  background-color: #fff;
+}
+
+.button:hover .button__icon path {
+  fill: none;
+  stroke: #D9D9D9;
+}
+
+.button:hover .button__text {
+  color: #fff;
+}
+
+.button:hover .button__icon-arrow path {
+  fill: #000;
 }
 
 .footer {
@@ -434,9 +600,22 @@ body {
 }
 
 .portfolio__text {
+  position: relative;
   margin-bottom: 130px;
   font-size: 14px;
   line-height: 120%;
+}
+
+.portfolio__text::after {
+  position: absolute;
+  content: '';
+  width: 13px;
+  height: 14px;
+  background-image: url("../images/footer-arrow.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  bottom: -70px;
+  left: 120px;
 }
 
 .portfolio__list {
