@@ -12,7 +12,7 @@
     <header class="header">
       <div class="page__container header__container">
         <nav class="navigation">
-          <a class="navigation__link">
+          <a class="navigation__link" href="index.html">
             <img class="logo logo__header" src="images/logo.svg" width="66" height="25" alt="Лого сайта">
           </a>
           <div class="navigation__lang">
@@ -31,9 +31,40 @@
           <div class="burger">
             <div class="burger__wrapper">
               <div class="burger-menu">
-                <span class="visually-hidden">Открыть меню</span>
                 <span class="burger-menu__line"></span>
                 <span class="burge-menu__line"></span>
+              </div>
+            </div>
+          </div>
+          <div class="navigation__modal-container navigation__modal-container--close">
+            <div class="navigation__wrapper">
+              <div class="navigation__wrapper-another">
+                <button class="button__close navigation__button-close" type="button"></button>
+                <div class="navigation__wrapper-link">
+                  <ul class="navigation__list">
+                    <li class="navigation__item">
+                      <a class="navigation__link" href="#">Обо мне</a>
+                    </li>
+                    <li class="navigation__item">
+                      <a class="navigation__link" href="#">Навыки</a>
+                    </li>
+                    <li class="navigation__item">
+                      <a class="navigation__link" href="#">Опыт</a>
+                    </li>
+                    <li class="navigation__item">
+                      <a class="navigation__link" href="#">Образование</a>
+                    </li>
+                  </ul>
+                </div>
+                <button class="button button__navigation">
+                  <svg class="button__icon" width="255" height="50" viewBox="0 0 255 50" fill="none" stroke="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M198 0C200.761 5.15405e-07 203 2.23858 203 5V12H205V5C205 2.23858 207.239 4.0266e-08 210 0H250C252.761 6.44256e-07 255 2.23858 255 5V45C255 47.7614 252.761 50 250 50H210C207.239 50 205 47.7614 205 45V38H203V45C203 47.7614 200.761 50 198 50H5C2.23858 50 4.02673e-08 47.7614 0 45V5C6.44277e-07 2.23858 2.23858 0 5 0H198ZM230 4C218.402 4 209 13.402 209 25C209 36.598 218.402 46 230 46C241.598 46 251 36.598 251 25C251 13.402 241.598 4 230 4Z" fill="white"/>
+                    </svg>
+                  <span class="button__text navigation__button-text">Получить консультацию</span>
+                  <svg class="button__icon-arrow svg__icon-arrow" width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9.31919 6.91248H0V5.33752H9.31919L5.21237 1.11349L6.29497 0L12.25 6.125L6.29497 12.25L5.21237 11.1365L9.31919 6.91248Z" fill="white"/>
+                  </svg>
+                </button>
               </div>
             </div>
           </div>
@@ -295,9 +326,9 @@
                   </defs>
                   </svg>
                 <span class="button__text">Посмотреть сертификаты</span>
-                <svg class="button__icon-arrow education__icon-arrow" width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg class="button__icon-arrow svg__icon-arrow" width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M9.31919 6.91248H0V5.33752H9.31919L5.21237 1.11349L6.29497 0L12.25 6.125L6.29497 12.25L5.21237 11.1365L9.31919 6.91248Z" fill="white"/>
-                  </svg>
+                </svg>
               </button>
         </div>
       </section>
@@ -332,7 +363,7 @@
               <a class="contacts__link contacts__link--telegram" href="https://t.me/Alexsander_Du" target="_blank">Telegram</a>
             </li>
             <li class="contacts__item">
-              <a class="contacts__link contacts__link--mail" href="mailto:alexsander.du.customs@gmail.com" target="_blank">alexsander.du.customs@gmail.com</a>
+              <a class="contacts__link contacts__link--mail" href="mailto:alexsander.du.customs@gmail.com" target="_blank">gmail</a>
             </li>
             <li class="contacts__item">
               <a class="contacts__link contacts__link--phone" href="tel:+79892667328" target="_blank">+ 7(989)266-73-28</a>
@@ -351,5 +382,83 @@
         </section>
       </div>
     </footer>
+    <div class="modal__container modal__container-close">
+      <div class="modal">
+        <button class="button__close button__close-modal">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+        <div class="modal__wrapper">
+          <section class="discuss">
+            <h2 class="discuss__title">Давайте обсудим ваш проект!</h2>
+            <p class="discuss__text">Любую идея, любой масштаб<br> — я помогу воплотить в жизнь.</p>
+          </section>
+          <section class="form__section">
+            <form class="form" action="">
+              <ul class="form__list">
+                <li class="form__item">
+                  <label class="form__label">
+                    <span class="form__label-text">Ваше имя*</span>
+                    <input class="form__field field__name" type="text" name="name" id="name" placeholder="ALEX" required>
+                  </label>
+                </li>
+                <li class="form__item">
+                  <label class="form__label">
+                    <span class="form__label-text">Telegram аккаунт*</span>
+                    <input class="form__field field__email" type="email" name="email" id="email" placeholder="@ALEX" required>
+                  </label>
+                </li>
+                <li class="form__item">
+                  <label class="form__label">
+                    <span class="form__label-text">Сообщение*</span>
+                    <input class="form__field field__massage" type="text" name="massage" id="massage" placeholder="ALEX" required>
+                  </label>
+                </li>
+              </ul>
+              <label class="form__label form__label--checkbox">
+                <input class="visually-hidden form__field field__checkbox" type="checkbox" value="agree" name="personal__data" id="checkbox" checked>
+                <span class="label__mark"></span>
+                <span class="form__label-subtext"><b class="form__label-text--another">Я согласен с политикой</b> обработки персональных данных.</span>
+              </label>
+              <button class="button modal__button" type="submit">
+                <svg class="button__icon education__icon" width="289" height="50" viewBox="0 0 289 50" fill="none" stroke="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M232.18 0C234.941 0.000205226 237.18 2.2387 237.18 5V12H239.173V5C239.173 2.23858 241.411 6.5903e-08 244.173 0H284C286.761 0.000239132 289 2.23872 289 5V45C289 47.7613 286.761 49.9998 284 50H244.173C241.411 50 239.173 47.7614 239.173 45V38H237.18V45C237.18 47.7613 234.941 49.9998 232.18 50H5C2.23858 50 4.02673e-08 47.7614 0 45V5C6.44277e-07 2.23858 2.23858 3.10149e-08 5 0H232.18ZM264.087 4C252.529 4 243.159 13.402 243.159 25C243.159 36.598 252.529 46 264.087 46C275.645 45.9996 285.015 36.5977 285.015 25C285.015 13.4023 275.645 4.00038 264.087 4Z" fill="white"/>
+                  <ellipse cx="264.086" cy="25" rx="21.9241" ry="22" fill="white"/>
+                  <path d="M264.086 3.5C275.917 3.5 285.511 13.1242 285.511 25C285.511 36.8758 275.917 46.5 264.086 46.5C252.255 46.4998 242.662 36.8756 242.662 25C242.662 13.1244 252.255 3.50017 264.086 3.5Z" stroke="white" stroke-opacity="0.2"/>
+                  <g clip-path="url(#clip0_131_2025)">
+                  <path d="M267.28 25.8114H257.961V24.2364H267.28L263.173 20.0124L264.256 18.8989L270.211 25.0239L264.256 31.1489L263.173 30.0354L267.28 25.8114Z" fill="white"/>
+                  </g>
+                  <defs>
+                  <clipPath id="clip0_131_2025">
+                  <rect width="13.9517" height="13.9517" fill="white" transform="matrix(0 1 -1 0 271.062 18.0239)"/>
+                  </clipPath>
+                  </defs>
+                  </svg>
+                <span class="button__text button__text--form">Отправить</span>
+                <svg class="button__icon-arrow svg__icon-arrow" width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M9.31919 6.91248H0V5.33752H9.31919L5.21237 1.11349L6.29497 0L12.25 6.125L6.29497 12.25L5.21237 11.1365L9.31919 6.91248Z" fill="white"/>
+                </svg>
+              </button>
+            </form>
+          </section>
+          <section class="contacts-modal">
+            <h2 class="visually-hidden">Контакты</h2>
+            <p class="contacts-modal__text">
+              Или свяжитесь со мной напрямую.
+            </p>
+            <ul class="contacts-modal__list">
+              <li class="contacts-modal__item">
+                <a class="contacts-modal__link contacts-modal____link--telegram" href="https://t.me/Alexsander_Du" target="_blank">Telegram</a>
+              </li>
+              <li class="contacts-modal__item">
+                <a class="contacts-modal__link contacts-modal__link--mail" href="mailto:alexsander.du.customs@gmail.com" target="_blank">gmail</a>
+              </li>
+              <li class="contacts-modal__item">
+                <a class="contacts-modal__link contacts-modal__link--phone" href="tel:+79892667328" target="_blank">+ 7(989)266-73-28</a>
+              </li>
+            </ul>
+          </section>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
