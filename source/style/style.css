@@ -118,10 +118,6 @@ body {
   display: none;
 }
 
-.navigation__lang-select--open {
-  display: block;
-}
-
 .navigation__lang::after {
   position: absolute;
   content: '';
