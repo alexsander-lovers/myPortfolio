@@ -215,6 +215,7 @@ body {
 }
 
 .navigation__modal-container {
+  display: none;
   position: fixed;
   width: 100%;
   height: 100%;
@@ -309,10 +310,6 @@ body {
   text-transform: uppercase;
   text-decoration: none;
   color: #fff;
-}
-
-.navigation__modal-container--open {
-  display: block;
 }
 
 .navigation__modal-container--close {
